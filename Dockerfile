@@ -6,5 +6,5 @@ RUN curl -fsSL https://download.docker.com/linux/ubuntu/gpg | gpg --dearmor -o /
 RUN apt-add-repository ppa:nrf-sarao/mesos
 RUN apt-get update && DEB_FRONTEND=noninteractive apt-get install -y \
     docker-ce-cli=5:23.0.1-1~ubuntu.22.04~jammy \
-    mesos=1.11.0-1ubuntu1 && \
+    mesos=1.11.0-1ubuntu3 && \
     rm -rf /var/lib/apt/lists/
