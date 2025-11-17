@@ -1,4 +1,4 @@
-FROM ubuntu:noble-20251001
+FROM ubuntu:noble-20251013
 
 RUN apt-get update && DEB_FRONTEND=noninteractive apt-get install -y curl gnupg ca-certificates lsb-release software-properties-common
 RUN curl -fsSL https://download.docker.com/linux/ubuntu/gpg | gpg --dearmor -o /usr/share/keyrings/docker.gpg && \
